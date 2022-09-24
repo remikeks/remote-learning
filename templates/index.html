@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top p-2 mb-2 justify-content-center">
+    <ul class="navbar-nav">
+        <li class="nav-item px-5">
+            <a class="nav-link text-info" href="#about">About</a>
+        </li>
+        <li class="nav-item px-5">
+            <a class="nav-link text-info" href="#mission">Mission</a>
+        </li>
+        <li class="nav-item px-5">
+            <a class="nav-link text-info" href="/courses">Our Courses</a>
+        </li>
+        <li class="nav-item px-5">
+            <a class="nav-link text-info" href="/register">Register</a>
+        </li>
+        <li class="nav-item px-5">
+            <a class="nav-link text-info" href="#contact">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h3 id="about">About Us</h3>
+    <p> PST is a global technology institute focused on training, mentoring, and developing young talents into world-renowned technology experts.
+        With a focus on computing, we are helping shape a world with an ever-increasing reliance on digital infrastructure, and bridging the gap between software and peopleware.
+        To do this, we have embarked on a journey to train as many individuals as are willing to learn, at no extra cost,
+        equipping them with skills needed to be at the forefront of the emerging world.
+    </p>
+
+    <br>
+    <form>
+        <div>
+            <input type="image" src="/static/image1.jpg" alt="Technology" class="centre">
+            <label for="image" id="label">Changing lives with software.</label>
+        </div>
+    </form>
+    <br>
+
+    <p>
+    <h3 id="mission">Our Mission</h3>
+    Our ultimate goal is to impact the world using technology. We aim to show individuls, not just the power of tech,
+        but what they themselves can achieve if they believe and work towards it.
+        It is our firm beleif that man can achieve whatsoever his imagination can conceive.
+        We hope to get more people to see the world like we do.
+    </p>
+
+    <h3 id>Our Courses</h3>
+    <p> We offer a variety of courses, each taught by seasoned instructors with years of academic and industry experience.
+        All our courses are free to take. This is because we believe everyone should be given a chance to pursue their dreams, regardless of financial constraints.
+        You need not have prior experience in any of the fields to register for a course.
+        They have been tailor-made to accomodate the needs of beginners as well as experts.
+    </p>
+
+    <p>Want to have an overview of all our courses? Click <a href="/courses">here</a></p>
+    <p>To start learning with us, <a href="/register">register here</a> for free!</p>
+</div>
+{% endblock %}

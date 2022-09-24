@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Courses
+{% endblock %}
+
+{% block main %}
+<table  class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Duration (Months)</th>
+    </thead>
+
+    <tbody>
+        {% for course in courses %}
+        <tr>
+            <td>{{ course.name }}</td>
+            <td>{{ course.duration }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<div class="alert alert-info" role="alert">
+    <p><strong>Note:</strong> This is not a definitive list. As we progress, more courses will be added on demand and recommendation.</p>
+</div>
+
+<p><b>Return to <a href="/">home</a>.</b></p>
+{% endblock %}

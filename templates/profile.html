@@ -1,0 +1,33 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+<div  class="alert alert-success" role="alert">
+    <p>You have been successfully registered!</p>
+</div>
+
+
+<div>
+    <h5>Your Profile</h5>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>Name</b>: {{ fname }} {{ lname }}</li>
+        <li class="list-group-item"><b>Sex</b>: {{ sex }}</li>
+        <li class="list-group-item"><b>Age</b>: {{ age }}</li>
+        <li class="list-group-item"><b>Email</b>: {{ email }}</li>
+        <li class="list-group-item"><b>Nationality</b>: {{ nationality }}</li>
+        <li class="list-group-item"><b>Course Selection</b>: {{ course }}</li>
+    </ul>
+<br>
+    <p><b>Details of your selected course will be communicated to you via mail within 24 hours. If not in your inbox, be sure to check your spam folder.</b></p>
+</div>
+
+<p>
+    <div>
+        <p>Return to <a href="/">home</a>.</p>
+    </div>
+</p>
+
+{% endblock %}
